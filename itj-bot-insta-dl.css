@@ -1,0 +1,115 @@
+.download-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.download-items {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.download-items__thumb {
+    position: relative;
+    width: 100%; /* Adjusted to fit the container */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
+}
+
+.download-items__thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    max-width: 300px;
+}
+
+.format-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+}
+
+.photo-option {
+    margin-top: 10px;
+}
+
+.minimal {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.download-items__btn {
+    margin-top: 10px;
+}
+
+.abutton {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.abutton:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .download-items {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .download-items {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+/* Additional Styling for Improved Appearance */
+
+/* Increase spacing between items */
+.download-items {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.download-items:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Center align text inside buttons */
+.minimal,
+.abutton {
+    text-align: center;
+}
+
+/* Adjust padding for buttons */
+.minimal,
+.abutton {
+    padding: 12px 20px;
+}
+
+/* Increase font size for better readability */
+.abutton {
+    font-size: 16px;
+}
